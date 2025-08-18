@@ -1,0 +1,21 @@
+{
+  "model_type": "LogisticRegression (with StandardScaler)",
+  "problem_type": "classification",
+  "features": [
+    "sepal_length",
+    "sepal_width",
+    "petal_length",
+    "petal_width"
+  ],
+  "class_names": [
+    "setosa",
+    "versicolor",
+    "virginica"
+  ],
+  "trained_at": "2025-08-18T06:54:51Z",
+  "metrics": {
+    "accuracy": 0.9333333333333333
+  },
+  "sklearn_version": "1.7.1",
+  "has_predict_proba": true
+}
