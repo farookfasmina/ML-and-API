@@ -23,9 +23,9 @@ We use **Logistic Regression** within a **scikit-learn Pipeline** with `Standard
 
 ---
 
-## 📡 API Usage Examples
+📡 API Usage Examples
 
-### 1. Health check
+ 1. Health check
 `GET /`  
 Response:
 ```json
