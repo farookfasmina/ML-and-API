@@ -1,4 +1,4 @@
-🌸 Iris Flower Classification — FastAPI ML Inference
+ 🌸 Iris Flower Classification — FastAPI ML Inference
 
  📝 Problem Description
 The goal of this project is to classify iris flowers into one of three species:
@@ -23,7 +23,7 @@ We use **Logistic Regression** within a **scikit-learn Pipeline** with `Standard
 
 ---
 
-📡 API Usage Examples
+ 📡 API Usage Examples
 
  1. Health check
 `GET /`  
@@ -34,6 +34,8 @@ Response:
 POST /predict
 Request:
 
+json
+
 {
   "sepal_length": 5.1,
   "sepal_width": 3.5,
@@ -41,6 +43,8 @@ Request:
   "petal_width": 0.2
 }
 Response:
+
+json
 
 {
   "prediction": "setosa",
@@ -50,6 +54,8 @@ Response:
 GET /model-info
 Example response:
 
+json
+
 {
   "model_type": "LogisticRegression (with StandardScaler)",
   "features": ["sepal_length","sepal_width","petal_length","petal_width"],
@@ -58,18 +64,18 @@ Example response:
 }
 🚀 How to Run the Application
 1. Setup environment
-
+bash
 python -m venv .venv
 # Windows: .venv\Scripts\activate
 # Linux/Mac: source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 2. Prepare dataset
+bash
 python make_dataset.py
-
 3. Train model
+bash
 python train_model.py
-
 This creates:
 
 model.pkl (trained model)
@@ -77,6 +83,7 @@ model.pkl (trained model)
 model_meta.json (metadata)
 
 4. Run FastAPI server
+bash
 uvicorn main:app --reload
 Server will be available at:
 👉 http://127.0.0.1:8000
